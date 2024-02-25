@@ -1,4 +1,4 @@
-![Electron运行流程详解(Electron运行流程详解.jpg)](https://github.com/NewViewNewLife/ElectronApp/blob/main/imgs/Electron运行流程详解.jpg)
+![Electron运行流程详解(Electron运行流程详解.jpg)](https://github.com/NewViewNewLife/ElectronApp/blob/main/imgs/1.jpg)
 # 一、安装Electron
 使用`npm`安装执行下述命令`npm install --save-dev --paltform=win32 electron`频繁失败，安装卡在下述部分无响应：
 
