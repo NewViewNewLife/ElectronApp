@@ -1,0 +1,4 @@
+# dir 不需要的文件夹
+/node_modules
+
+/dist

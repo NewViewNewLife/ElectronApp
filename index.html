@@ -1,0 +1,22 @@
+<!-- 
+    在可以为我们的应用创建窗口前，我们需要先创建加载进该窗口的内容。 
+    在Electron中，各个窗口显示的内容可以是本地HTML文件，也可以是一个远程url。 
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>你好</title>
+        <script type="tex/javascript" src="./index.js"></script>
+    </head>
+    <body>
+        <h1>你好!</h1>
+        我们正在使用 Node.js <span id="node-version"></span>,
+        Chromium <span id="chrome-version"></span>,
+        和 Electron <span id="electron-version"></span>.
+    </body>
+</html>
