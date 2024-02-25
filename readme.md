@@ -1,4 +1,4 @@
-![Electron运行流程详解](https://github.com/NewViewNewLife/ElectronApp/blob/main/Electron%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B%E8%AF%A6%E8%A7%A3.jpg)
+![Electron运行流程详解(./Electron运行流程详解.jpg)](https://github.com/NewViewNewLife/ElectronApp/blob/main/Electron%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B%E8%AF%A6%E8%A7%A3.jpg)
 # 一、安装Electron
 使用`npm`安装执行下述命令`npm install --save-dev --paltform=win32 electron`频繁失败，安装卡在下述部分无响应：
 
@@ -25,16 +25,16 @@ npm install -g electron-builder
 ```
 这里采用全局安装方便以后在其他项目中使用。使用时需要在项目的`package.json`文件中的`scripts`字段中添加`build`字段指明`electron-builder`的路径。全局安装时为`electron-builder`，本地安装时为`项目地址/node_modules/.bin/electron-builder`。
 
-![Electron-builder修改后的package.json文件](./Electron-builder修改后的package.json文件.png)
+![Electron-builder修改后的package.json文件(./Electron-builder修改后的package.json文件.png)](https://github.com/NewViewNewLife/ElectronApp/blob/main/Electron-builder%E4%BF%AE%E6%94%B9%E5%90%8E%E7%9A%84package.json%E6%96%87%E4%BB%B6.png)
 
 ## 2. 进行打包
 使用`npm run build`命令开始打包。该命令会在系统目录中查找如下文件，如果查找不到，就会从`Github`下载。此时如果网络状况欠佳，会导致打包失败。可以根据报错信息自行通过其他手段下载，然后放置到对应目录，即可成功打包。默认打包位置为当前`package.json`文件路径下的`dist`文件夹。更多打包设置可以参考[官网文档](https://www.electron.build/#/)。
 
 正确的打包结果如下：
-![正确的打包结果](./正确的打包结果.png)
+![正确的打包结果(./正确的打包结果.png)](https://github.com/NewViewNewLife/ElectronApp/blob/main/%E6%AD%A3%E7%A1%AE%E7%9A%84%E6%89%93%E5%8C%85%E7%BB%93%E6%9E%9C.png)
 
 打包时的报错信息（指出了下载失败的文件及下载地址）：
-![错误的打包结果](./错误的打包结果.png)
+![错误的打包结果(./错误的打包结果.png)](https://github.com/NewViewNewLife/ElectronApp/blob/main/%E9%94%99%E8%AF%AF%E7%9A%84%E6%89%93%E5%8C%85%E7%BB%93%E6%9E%9C.png)
 
 可能需要手动下载的文件及对应的保存位置：
 |文件名|文件保存位置|补充说明|
