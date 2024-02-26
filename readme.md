@@ -1,3 +1,6 @@
+<p align="center">
+  <img width="320" src="https://wpimg.wallstcn.com/ecc53a42-d79b-42e2-8852-5126b810a4c8.svg">
+</p>
 ![Electron运行流程详解(Electron运行流程详解.jpg)](./imgs/Electron运行流程详解.jpg)
 # 一、安装Electron
 使用`npm`安装执行下述命令`npm install --save-dev --paltform=win32 electron`频繁失败，安装卡在下述部分无响应：
